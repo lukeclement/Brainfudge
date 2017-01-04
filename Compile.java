@@ -33,7 +33,7 @@ public class Compile{
           i=charPos.get(charPos.size()-1);
         }else{charPos.remove(charPos.size()-1);}break;
         case '.': System.out.print((char)base[pointer]);break;
-        case ',': base[pointer]=(int)(scan.nextLine().charAt(0));
+        case ',': try{base[pointer]=(int)(scan.nextLine().charAt(0));}catch(Exception e){} break;
       }
     }
   }
